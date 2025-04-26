@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickBites - Order Food</title>
+    <title>ChatBox - QuickBites</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
 <body>
-    <h1>Welcome to QuickBites</h1>
-    
-    <button onclick="loadMenu()">View Menu</button>
-    <div id="menu"></div>
+    <h1></h1>
+    <div class="chat-container">
+        <div id="chatMessages"></div>
+        <div id="chatResponses"></div>
 
-    <div class="box">
-        <h1>Welcome to QuickBites</h1>
-        <p>Skip the Line. Savor the Time.</p>
-    </div>
-
+        <input type="text" id="chatInput" placeholder="Chat with chefbox...">
+        <button onclick="sendMessage()">Send</button>
     <img src="C:\Users\tshep\Downloads\download__61_-removebg-preview (1).png" class="image-overlay image1">
     <img src="C:\Users\tshep\Downloads\download__63_-removebg-preview.png" class="image-overlay image2">
     <img src="C:\Users\tshep\Downloads\Frango_Frito_Lanches_PNG_Transparente-removebg-preview.png" class="image-overlay image3">
@@ -30,26 +27,9 @@
     <img src="C:\Users\tshep\Downloads\download__64_-removebg-preview.png" class="image-overlay image9">
 
     
-    <h2>Your Order:</h2>
-    <div id="orderSummary"></div>
-
-    <div class="box">
-
-    <h2>Select Payment Method:</h2>
-    <select id="paymentMethod">
-        <option value="Food credits">Food Credits</option>
-        <option value="Card">Card</option>
-        <option value="Cash">Cash</option>
-    </select>
-    <input type="text" id="studentId" placeholder="Enter Student ID (if using Food Credits)" />
-</div>
 
 
-    <button onclick="processPayment()">Confirm Payment</button>
-    <div id="confirmationMessage"></div>
-
-    <a href="chat.html">Open Chat</a>
-
-    <script src="index.js"></script>
+    </div>
+    <script src="chat.js"></script>
 </body>
 </html>

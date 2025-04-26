@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - QuickBites</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <script src="{{ url_for('static', filename='checkout.js') }}"></script>
+</head>
+<body>
+    <h1>Order Checkout</h1>
+    <div id="orderSummary"></div>
+
+    <h2>Select Payment Method:</h2>
+    <select id="paymentMethod">
+        <option value="Food credits">Food Credits</option>
+        <option value="Card">Card</option>
+        <option value="Cash">Cash</option>
+    </select>
+    <input type="text" id="studentId" placeholder="Enter Student ID (if using Food Credits)" />
+
+    <button onclick="processPayment()">Confirm Payment</button>
+    <div id="confirmationMessage"></div>
+</body>
+</html>
